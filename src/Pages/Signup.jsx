@@ -39,7 +39,7 @@ function Signup(){
             const fileReader = new FileReader();
             fileReader.readAsDataURL(uploadedImage);
             fileReader.addEventListener('load', function(){
-                console.log(this.result);
+                // console.log(this.result);
                 setPreviewIamge(this.result);
             })
         }
@@ -67,7 +67,7 @@ function Signup(){
                             type="file"
                             name="image_uploads"
                             id="image_uploads"
-                            // accept=".jpg, .jpeg, .png, .svg"
+                            accept=".jpg, .jpeg, .png, .svg"
                         />
                         <div className="flex flex-col gap-1">
                             <label htmlFor="fullName" className="font-semibold">Name</label>
